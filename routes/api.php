@@ -52,3 +52,4 @@ Route::controller(CompanyController::class)->group(
     Route::get('/jobs/{id}', 'getJob')->name('job');
   }
 );
+
