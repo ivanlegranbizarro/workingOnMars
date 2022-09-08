@@ -10,7 +10,12 @@ It could be, but luckily, ***Working on Mars appears***; The API that connects c
 
 Please check the official Laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/9.x).
 
-Laravel is such a complete and incredible Framework that in order to test the API you will hardly need to do anything after cloning this repository, since Laravel already comes with everything you need as standard. Even so, I have included a wonderful tool that has helped me generate the documentation for this project: [laravel-request-docs](https://github.com/rakutentech/laravel-request-docs), which will also help us to be able to test the API with a purely educational and demonstration approach, we have preferred to use an SQLite Database to simplify the process. When doing migrations, after cloning the repository and installing dependencies, Laravel should politely complain about the lack of a database.sqlite file, and should also politely offer to create it for you.
+Laravel is such a complete and incredible Framework that in order to test the API you will hardly need to do anything after cloning this repository, since Laravel already comes with everything you need as standard. Even so, I have included a wonderful tool that has helped me generate the documentation for this project: [laravel-request-docs](https://github.com/rakutentech/laravel-request-docs), which will also help us to be able to test the API from the documentation itself.
+After downloading the repository you will only have to install the dependencies with the following command:
+
+composer install
+
+ Since this API has an educational orientation and is merely demonstrative, we have preferred to use an SQLite Database to simplify the process. When doing migrations, after cloning the repository and installing dependencies, Laravel should politely complain about the lack of a database.sqlite file, and should also politely offer to create it for you.
 
 ## One last warning, this one of a purely scientific nature
 
