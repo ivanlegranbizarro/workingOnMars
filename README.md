@@ -10,20 +10,7 @@ It could be, but luckily, ***Working on Mars appears***; The API that connects c
 
 Please check the official Laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/9.x).
 
-Laravel is such a complete and incredible Framework that in order to test the Api you will hardly need to do anything after cloning this repository, since Laravel already comes with everything you need as standard. Even so, I have included a wonderful tool that has helped me generate the documentation for this project: [laravel-request-docs](https://github.com/rakutentech/laravel-request-docs), which will also help us to be able to test the api from the documentation itself.
-After downloading the repository you will only have to install the dependencies with the following command:
-
-composer install
-
-## Some orientation
-
-I have redirected the main link of the project to the documentation page so that at a glance you can see all the Endpoints and test them.
-
-All routes, except those that have to be intrinsically public to register companies, candidates or to login to them, are protected with Laravel Sanctum.
-
-## Oh, a boring (but important) warning about Databases
-
-As this is a project with some complexity, but with a purely educational and demonstration approach, we have preferred to use an SQLite Database to simplify the process. When doing migrations, after cloning the repository and installing dependencies, Laravel should politely complain about the lack of a database.sqlite file, and should also politely offer to create it for you.
+Laravel is such a complete and incredible Framework that in order to test the API you will hardly need to do anything after cloning this repository, since Laravel already comes with everything you need as standard. Even so, I have included a wonderful tool that has helped me generate the documentation for this project: [laravel-request-docs](https://github.com/rakutentech/laravel-request-docs), which will also help us to be able to test the API with a purely educational and demonstration approach, we have preferred to use an SQLite Database to simplify the process. When doing migrations, after cloning the repository and installing dependencies, Laravel should politely complain about the lack of a database.sqlite file, and should also politely offer to create it for you.
 
 ## One last warning, this one of a purely scientific nature
 
@@ -48,10 +35,3 @@ For sonarcloud, that's 4 'Code smell' warnings, since it urges us to make a vari
 2) They are validations very subject to change. It is possible that later someone wants to change just some value of one of those particular validations. What should be done then, exclude that validation of the variable?
 
 Another factor to take into account is that sonarcloud complains about the HTML that Laravel includes by default, since this does not seem the most appropriate for ebooks... This is an API, we are not even going to use that HTML.
-
-
-# Postman
-
-## Trouble installing the project? Do you just want to take a look at the documentation?
-
-We have published the documentation in Postman in case you do not have time to install the project or, simply, as a first contact you prefer to take a look at the documentation. You can consult it [here](https://documenter.getpostman.com/view/14387527/VVBWT6LM).
