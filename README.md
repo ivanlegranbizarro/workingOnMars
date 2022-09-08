@@ -8,7 +8,7 @@ It could be, but luckily, ***Working on Mars appears***; The API that connects c
 
 # Getting started
 
-Please check the official Laravel installation guide for server requirements before you start. Official Documentation [enter link description here](https://laravel.com/docs/9.x).
+Please check the official Laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/9.x).
 
 Laravel is such a complete and incredible Framework that in order to test the Api you will hardly need to do anything after cloning this repository, since Laravel already comes with everything you need as standard. Even so, I have included a wonderful tool that has helped me generate the documentation for this project: [laravel-request-docs](https://github.com/rakutentech/laravel-request-docs), which will also help us to be able to test the api from the documentation itself.
 After downloading the repository you will only have to install the dependencies with the following command:
