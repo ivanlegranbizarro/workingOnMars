@@ -42,7 +42,7 @@ Here is an example:
         'zip' => 'required|string|max:255',
         'state' => 'required|string|max:255',
   
-For sonarcloud, that's 4 'Code smell' warnings, since it urges us to make a variable instead of declaring the same variable four times. But there are two things that sonarcloud is not taking into account:
+For sonarcloud, that's 4 'Code smell' warnings, since it urges us to make a variable instead of declaring the same information four times. But there are two things that sonarcloud is not taking into account:
 
 1) For something as critical as validations, the code is much more readable this way.
 2) They are validations very subject to change. It is possible that later someone wants to change just some value of one of those particular validations. What should be done then, exclude that validation of the variable?
