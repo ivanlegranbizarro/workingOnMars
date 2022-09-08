@@ -48,3 +48,10 @@ For sonarcloud, that's 4 'Code smell' warnings, since it urges us to make a vari
 2) They are validations very subject to change. It is possible that later someone wants to change just some value of one of those particular validations. What should be done then, exclude that validation of the variable?
 
 Another factor to take into account is that sonarcloud complains about the HTML that Laravel includes by default, since this does not seem the most appropriate for ebooks... This is an API, we are not even going to use that HTML.
+
+
+# Postman
+
+## Trouble installing the project? Do you just want to take a look at the documentation?
+
+We have published the documentation in Postman in case you do not have time to install the project or, simply, as a first contact you prefer to take a look at the documentation. You can consult it [here](https://documenter.getpostman.com/view/14387527/VVBWT6LM).
