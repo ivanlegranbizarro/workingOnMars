@@ -28,3 +28,21 @@ As this is a project with some complexity, but with a purely educational and dem
 Working on Mars has a system so that candidates can subscribe and receive emails every time a company publishes a new job offer. This configuration is done with mailtrap's Email Sandbox system. The problem is that not even the best astrophysicists on earth know if the mailtrap configuration will survive a space trip to Mars...
 
 Ok, no, the configuration to mailtrap will not survive the publication of the project on Github, since, obviously, the .env file will not be published, but you can see it in the code (NewJobRegisteredNotification.php, NewJobRegisteredEvent.php and NewJobRegisteredListener .php) that a system has been built so that candidates are notified by e-mail when a new job is published.
+
+## You don't tell me that on the street, *sonarcloud*
+
+We were going to publish the values returned by the sonarcloud code analysis, but we strongly disagree with their criteria when it comes to issuing warnings. 
+
+Here is an example:
+
+        'street' => 'required|string|max:255',
+        'city' => 'required|string|max:255',
+        'zip' => 'required|string|max:255',
+        'state' => 'required|string|max:255',
+  
+For sonarcloud, that's 4 'Code smell' warnings, since it urges us to make a variable instead of declaring the same variable four times. But there are two things that sonarcloud is not taking into account:
+
+1) For something as critical as validations, the code is much more readable this way.
+2) They are validations very subject to change. It is possible that later someone wants to change just some value of one of those particular validations. What should be done then, exclude that validation of the variable?
+
+Another factor to take into account is that sonarcloud complains about the HTML that Laravel includes by default, since this does not seem the most appropriate for ebooks... This is an API, we are not even going to use that HTML.

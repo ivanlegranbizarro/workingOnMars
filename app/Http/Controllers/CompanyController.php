@@ -41,11 +41,6 @@ class CompanyController extends Controller
         'message' => $th->getMessage()
       ], 500);
     }
-    catch (\Throwable $e) {
-      return response()->json([
-        'message' => $e->getMessage()
-      ], 500);
-    }
   }
 
   /**
